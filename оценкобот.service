@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram bot "grades_bot"
+After=network.target
+After=system.target
+
+[Service]
+type=simple
+User=root
+WorkingDirectory=/opt/grades_bot
+ExecStart=/usr/bin/python3 /opt/grades_bot/main_grade_bot.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
