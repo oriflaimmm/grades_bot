@@ -3,7 +3,7 @@ import sqlite3
 from telebot import types
 import pandas as pd
 
-token='6215957485:AAEtzsaaoGxJj7caq7kieFQYe71S-klsm_Q'
+token='***************'
 bot=telebot.TeleBot(token)
 
 conn = sqlite3.connect('orders.db', check_same_thread=False)
@@ -621,7 +621,7 @@ def function_stats4(message):
 
 def admin_func(message):
     id_usera = message.from_user.username
-    if id_usera == "scheissdreckk":
+    if id_usera == "**********":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True) 
         btn1 = types.KeyboardButton("Получить общую таблицу")
         btn2 = types.KeyboardButton("Проверить юзера")
